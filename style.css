@@ -38,6 +38,51 @@ p{
     font-weight: 300;
     letter-spacing: .05rem;
 }
+.en{
+    color: #FFF;
+
+}
+
+.pt{
+    color: rgb(19, 162, 28);
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background:#FFF;
+    border-radius: 25px;
+}
+
+.check:checked:before{
+    background: rgb(19, 162, 28);
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background:#333 ;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left:25px;
+    border: 2px solid rgb(19, 162, 28);
+}
+
+
 
 .section-title{
     font-size: 4rem;
@@ -51,6 +96,21 @@ p{
 
 .section-title span{
     color: rgb(19, 162, 28);
+}
+
+#servicesSectionTitleBR{
+    display: none;
+}
+
+#projectsSectionTitleBR{
+    display: none;
+}
+#aboutTitleBR{
+    display: none;
+}
+
+#contactTitleBR{
+    display: none;
 }
 
 .cta{
@@ -115,6 +175,7 @@ p{
     height: 100vh;
     left: 100%;
     top: 0;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,7 +361,7 @@ p{
 }
 #services .service-top{
     width: 500px;
-    max-margin: 0 auto;
+    margin: 0 auto;
 }
 
 #services .service-bottom{
@@ -319,7 +380,6 @@ p{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(img/img-1.png);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -642,7 +702,6 @@ p{
     }
 }
 
-
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -659,7 +718,7 @@ p{
         font-size: 7rem;
     }
     /*End Hello Section*/
-
+ 
     /*Services Section*/
     #services .service-bottom .service-item{
       flex-basis: 45%;
@@ -714,6 +773,7 @@ p{
     /*End About Section*/
     
     /*Contact Section*/
+
      #contact .contact{
         flex-direction: column;
         padding: 100px 0px;

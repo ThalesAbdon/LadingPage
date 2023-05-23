@@ -23,6 +23,11 @@
                             <li><a href="#projects" id="item" data-after="Projects">Projects</a></li>
                             <li><a href="#about" id="item" data-after="About">About</a></li>
                             <li><a href="#contact" id="item" data-after="Contact">Contact</a></li>
+                            <li>
+                                <span class="en">En</span>
+                                <input type="checkbox" class="check" id="language">
+                                <span class="pt">Pt</span>
+                            </li>
                         </ul>
                     </div>
             </div>
@@ -32,11 +37,11 @@
     <!-- Hello Section-->
     <section id="hello">
         <div class="hello container">
-            <div>
+            <div id="h1Presentation">
                 <h1>Hello,<span></span><h1>
                 <h1>My name is<span></span></h1> 
                 <h1>Thales<span></span></h1>
-                <a href="#projects" type="button" class="cta">Portfolio</a>
+                <a href="#projects" type="button" id = "buttonPortfolio"class="cta">Portfolio</a>
             </div>
         </div>
     </section>
@@ -47,10 +52,17 @@
       <div class="services container">
 
           <div class="service-top">
-             <h1 class="section-title">Serv<span>i</span>ces</h1>
-             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ut nam voluptates autem laudantium quasi 
-                tempore delectus nisi assumenda natus reprehenderit quia tempora, repudiandae quisquam ratione cum qui, omnis 
-                magni!
+             <h1 class="section-title" id="servicesSectionTitleEN">Serv<span>i</span>ces</h1>
+             <h1 class="section-title" id="servicesSectionTitleBR">Serv<span>i</span>ços</h1>
+             <p id="servicesParagraph"> I have extensive experience in backend development using Node.js and GraphQL,
+                 ensuring the creation of efficient and scalable APIs. On the frontend, I have skills in HTML and CSS 
+                 to create attractive and responsive interfaces. Additionally, I have knowledge in game development,
+                 using C# and Unity to create immersive experiences. I have also studied Python, with a special focus on Artificial
+                 Intelligence concepts, enabling the creation of intelligent and automated solutions. Complementing my expertise,
+                 I have developed games using JavaScript, leveraging the versatility of this language. Furthermore, I have had the 
+                 opportunity to teach programming to beginners, sharing my knowledge and assisting others in their learning journey. 
+                 I am ready to collaborate on challenging projects, applying my technical knowledge and passion for programming to 
+                 deliver high-quality solutions.
              </p>
           </div>
           
@@ -58,23 +70,23 @@
             <div class="service-item">
                 <div class="icon"><img src="img/icon/icons8-design-64.png"></div>
                 <h2>Front-End Developer</h2>
-                <p>I am a front-end developer with experience in HTML, CSS, React.js, and Next.js. I have a strong knowledge of building attractive and responsive user interfaces, with skills to work on multiple projects and integrate APIs. Additionally, I am always up-to-date with the latest trends and technologies to improve user experience and performance.
+                <p id="frontEndDeveloperParagraph">I am a front-end developer with experience in HTML, CSS, React.js, and Next.js. I have a strong knowledge of building attractive and responsive user interfaces, with skills to work on multiple projects and integrate APIs. Additionally, I am always up-to-date with the latest trends and technologies to improve user experience and performance.
                 </p>
             </div>
             <div class="service-item">
                 <div class="icon"><img src="img/icon/icons8-backend-development-64.png"></div>
                 <h2>Back-End Developer</h2>
-                <p>I am an experienced back-end developer in technologies such as JavaScript, Node.js, TypeScript, Nest.js, and GraphQL. I have a solid knowledge of writing unit tests with Jest, as well as skills in working on complex projects and creating scalable solutions. I am always up to date with the latest trends and technologies in back-end development to provide effective and efficient solutions.</p>
+                <p id="backEndDeveloperParagraph">I am an experienced back-end developer in technologies such as JavaScript, Node.js, TypeScript, Nest.js, and GraphQL. I have a solid knowledge of writing unit tests with Jest, as well as skills in working on complex projects and creating scalable solutions. I am always up to date with the latest trends and technologies in back-end development to provide effective and efficient solutions.</p>
             </div>
             <div class="service-item">
                 <div class="icon"><img src="img/icon/icons8-video-game-96.png"></div>
                 <h2>Game Developer</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis quas dignissimos rerum fuga molestiae inventore quaerat, nemo deleniti, dicta eum laboriosam consequatur officiis dolores maiores nulla, ullam porro eaque!</p>
+                <p id="gameDeveloperParagraph">As a game developer, I have experience in creating platform, fighting, and RPG games using JavaScript, Unity, and C#. I have worked on challenging projects, implementing engaging mechanics and impressive graphics. I stay updated with the latest trends and technologies. Ready to collaborate on innovative projects.</p>
             </div>
             <div class="service-item">
                 <div class="icon"><img src="img/icon/icons8-teacher-100.png"></div>
                 <h2>Programming Teacher</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis quas dignissimos rerum fuga molestiae inventore quaerat, nemo deleniti, dicta eum laboriosam consequatur officiis dolores maiores nulla, ullam porro eaque!</p>
+                <p id="programmingTeacherParagraph">As an instructor, I've taught programming logic and JavaScript to beginner students in Systems Analysis and Computer Science. Sharing knowledge, building foundations, and fostering essential skills for their promising tech journeys has been truly rewarding.</p>
             </div>
            
           </div>
@@ -87,17 +99,18 @@
      <section id="projects">
         <div class="projects container">
           <div class="projects-header">
-            <h1 class="section-title">Best <span>Projects</span></h1>
+            <h1 class="section-title" id="projectsSectionTitleEN">Best <span>Projects</span></h1>
+            <h1 class="section-title" id="projectsSectionTitleBR">Melhores <span>Projetos</span></h1>
           </div>
           <div class="all-projects">
              <div class="project-item">
                 <div class="project-info">
-                   <h1>Project 1</h1>
-                   <h2>Coding is Love</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae fugit sint non sit doloribus id perspiciatis adipisci nobis optio. Eius facilis odio accusantium odit reiciendis voluptate repudiandae optio repellat.</p>
+                   <a href="https://thalesabdon.netlify.app/" target="_blank"><h1 id="oldPortfolioHead">First Portfolio</h1></a>
+                   <h2>Old Portfolio</h2>
+                   <p id="oldPortfolioParagraph">This project represents my very first portfolio, developed using HTML, CSS, and JavaScript. It showcases my initial journey as a web developer and demonstrates my early skills in front-end development.</p>
                 </div>
                 <div class="project-img">
-                    <img src="./img/img-1.png" alt="img">
+                    <img src="./img/old-portfolio.png" alt="img">
                 </div>
              </div>
 
@@ -114,23 +127,23 @@
 
              <div class="project-item">
                 <div class="project-info">
-                   <h1>Project 3</h1>
-                   <h2>Coding is Love</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae fugit sint non sit doloribus id perspiciatis adipisci nobis optio. Eius facilis odio accusantium odit reiciendis voluptate repudiandae optio repellat.</p>
+                    <a href="https://pkmgame.netlify.app/" target="_blank"><h1>Pokemon Game</h1></a>
+                   <h2>Gotta Catch 'Em All!</h2>
+                   <p id="pokemonGameParagraph">A project inspired by the third-generation Pokémon games. As a fan of gaming since childhood, Pokémon was one of my favorite games. Playing it on my Game Boy sparked my passion for programming. I decided to challenge myself by recreating a similar experience to the franchise's games.</p>
                 </div>
                 <div class="project-img">
-                    <img src="./img/img-1.png" alt="img">
+                    <img src="./img/pokemon-game.png" alt="img">
                 </div>
              </div>
 
              <div class="project-item">
                 <div class="project-info">
-                   <h1>Project 4</h1>
-                   <h2>Coding is Love</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae fugit sint non sit doloribus id perspiciatis adipisci nobis optio. Eius facilis odio accusantium odit reiciendis voluptate repudiandae optio repellat.</p>
+                    <a href="https://medievalcyber.netlify.app/" target="_blank"><h1>Fight Game</h1></a>
+                   <h2>Hadouken!</h2>
+                   <p id="fightGameParagraph">During my childhood and adolescence, in the late 90s and early 2000s, playing Street Fighter with friends and cousins was one of the best experiences I could have. This nostalgia motivated me to try to recreate a small fighting game as a way to pay homage to that fun and challenging time.</p>
                 </div>
                 <div class="project-img">
-                    <img src="./img/img-1.png" alt="img">
+                    <img src="./img/fight-game.png" alt="img">
                 </div>
              </div>
           </div>
@@ -147,10 +160,12 @@
                 </div>
             </div>
             <div class="col-right">
-                <h1 class="section-title">About <span>me</span></h1>
-                <h2>Computer Scientist</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aspernatur repellendus beatae iste fugit sint, nulla quia exercitationem minus. Voluptatem quod qui at officiis. Perferendis aperiam dignissimos sapiente illo asperiores!</p>
-                <a href="#" type="button" class="cta">Download Resume</a>
+                <h1 class="section-title" id="aboutTitleEN">About <span>me</span></h1>
+                <h1 class="section-title" id="aboutTitleBR">Sobre <span>mim</span></h1>
+                <h2 id="aboutSubTitle">Computer Scientist</h2>
+                <p id="aboutMeParagraph">Hello, my name is Thales. Since I was 6 years old, when I received my first console (a Mega Drive III), I have been passionate about Technology. It was at that moment that I became curious about how the magic happened when pressing a button and making Sonic jump or run. My first contact with programming was at the age of 11, using Lego NXT, and I had the rewarding experience of winning a robotics championship at school. Since then, my interest in this world has only grown.
+                    I love coding, solving problems, and learning new things every day. I have discovered my passion for programming and the challenges it brings.</p>
+                <a href="resume.pdf" download="resume.pdf" Target="_blank" type="button" class="cta">Download Resume</a>
             </div>
         </div>
      </section>
@@ -159,25 +174,20 @@
     <!-- Contact Section-->
     <section id="contact">
         <div class="contact container">
-        <div><h1 class="section-title">Contact <span>Info</span></h1></div>
+            <div>
+                <h1 class="section-title" id="contactTitleEN">Contact <span>Info</span></h1>
+                <h1 class="section-title" id="contactTitleBR">Informações <span>de</span> Contato</h1>
+            </div>
         <div class="contact-items">
         
             <div class="contact-item">
             <div class="icon"><img src="img/icon/githubIcon.png"></div>
             <div class="contact-info">
                 <h1>GitHub</h1>
-                <h2><a href="https://github.com/ThalesAbdon" target="_blank">Look My GitHub</a></h2>
+                <h2 id="acessGitHub"><a href="https://github.com/ThalesAbdon" target="_blank">Look My GitHub</a></h2>
             </div>
         </div>
-        
-        <div class="contact-item">
-            <div class="icon"><img src="img/icon/linkedinIcon.png"></div>
-            <div class="contact-info">
-                <h1>Linkedin</h1>
-                <h2><a href="https://www.linkedin.com/in/thales-abdon/" target="_blank">Acess My Linkedin</a></h2>
-            </div>
-        </div>
-       
+
         <div class="contact-item">
             <div class="icon"><img src="img/icon/emailIcon.png"></div>
             <div class="contact-info">
@@ -185,6 +195,16 @@
                 <h2>thales.sousufpi@gmail.com</h2>
             </div>
         </div>
+        
+        <div class="contact-item">
+            <div class="icon"><img src="img/icon/linkedinIcon.png"></div>
+            <div class="contact-info">
+                <h1>Linkedin</h1>
+                <h2 id="acessLinkedin"><a href="https://www.linkedin.com/in/thales-abdon/" target="_blank">Acess My Linkedin</a></h2>
+            </div>
+        </div>
+       
+        
         </div>
         </div>
 
@@ -195,14 +215,14 @@
     <section id="footer">
         <div class="footer container">
             <div class="brand"><h1><span>T</span>hales <span>A</span>bdon</h1></div>
-            <h2>Only Study Saves</h2>
+            <h2 id="footerSubTitle">Only Study Saves</h2>
             <div class="social-icon">
                <div class="social-item">
-                <a href="#"><img src="img/icon/icons8-twitch-100.png"></a>
+                <a href="https://www.twitch.tv/lawkaizoku" target="_blank"><img src="img/icon/icons8-twitch-100.png"></a>
                </div>
 
                <div class="social-item">
-                <a href="#"><img src="img/icon/icons8-instagram-100.png"></a>
+                <a href="https://www.instagram.com/lawkaizoku" target="_blank"><img src="img/icon/icons8-instagram-100.png"></a>
                </div>
 
             </div>
