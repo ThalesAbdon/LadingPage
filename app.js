@@ -60,6 +60,8 @@ const aboutTitleEN = document.getElementById("aboutTitleEN");
 const aboutTitleBR = document.getElementById("aboutTitleBR");
 const aboutSubTitle = document.getElementById("aboutSubTitle");
 const aboutMeParagraph = document.getElementById("aboutMeParagraph");
+const resumeEN = document.getElementById("resumeEN");
+const resumeBR = document.getElementById("resumeBR");
 
 //Contact
 const contactTitleEN = document.getElementById("contactTitleEN");
@@ -122,6 +124,8 @@ language.addEventListener("click", () => {
     aboutSubTitle.textContent = "Cientista da computação";
     aboutMeParagraph.textContent =
       "Olá, meu nome é Thales. Desde os meus 6 anos de idade, quando recebi meu primeiro console (um Mega Drive III), sou apaixonado por Tecnologia. Foi nesse momento que despertou em mim a curiosidade de entender como a mágica acontecia ao apertar um botão e fazer o Sonic pular ou correr. Meu primeiro contato com programação foi aos 11 anos, utilizando Lego NXT, e tive a experiência gratificante de ganhar um campeonato de robótica na escola. Desde então, meu interesse por esse mundo só cresceu. Amo programar, resolver problemas e aprender coisas novas todos os dias. Descobri minha paixão por programação e pelos desafios que ela proporciona.";
+    resumeEN.style.display = "none";
+    resumeBR.style.display = "block";
     //Contact
     contactTitleEN.style.display = "none";
     contactTitleBR.style.display = "block";
@@ -172,6 +176,8 @@ language.addEventListener("click", () => {
     aboutSubTitle.textContent = "Computer Scientist";
     aboutMeParagraph.textContent =
       "Hello, my name is Thales. Since I was 6 years old, when I received my first console (a Mega Drive III), I have been passionate about Technology. It was at that moment that I became curious about how the magic happened when pressing a button and making Sonic jump or run. My first contact with programming was at the age of 11, using Lego NXT, and I had the rewarding experience of winning a robotics championship at school. Since then, my interest in this world has only grown.I love coding, solving problems, and learning new things every day. I have discovered my passion for programming and the challenges it brings.";
+    resumeEN.style.display = "block";
+    resumeBR.style.display = "none";
     //Contact
     contactTitleEN.style.display = "block";
     contactTitleBR.style.display = "none";
