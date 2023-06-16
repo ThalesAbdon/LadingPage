@@ -242,7 +242,7 @@ p {
 }
 #header .hamburguer .bar {
   height: 2px;
-  width: 30px;
+  width: 300px;
   position: relative;
   background-color: white;
   z-index: -1;
@@ -702,7 +702,7 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
-@media only screen and (min-width: 2500px) {
+@media only screen and (min-width: 1080px) {
   .cta {
     font-size: 2.5rem;
     padding: 20px 60px;
@@ -721,6 +721,7 @@ p {
     flex-basis: 45%;
     margin: 2.5%;
   }
+
   /*End Services Section*/
 
   /*Project Section*/
