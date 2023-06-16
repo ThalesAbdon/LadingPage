@@ -358,7 +358,7 @@ p {
   padding: 100px 0;
 }
 #services .service-top {
-  width: 500px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -702,7 +702,7 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
     padding: 20px 60px;
@@ -720,6 +720,10 @@ p {
   #services .service-bottom .service-item {
     flex-basis: 45%;
     margin: 2.5%;
+  }
+
+  #services .service-top {
+    width: 90%;
   }
 
   /*End Services Section*/
