@@ -731,6 +731,7 @@ p{
     /*End Services Section*/
 
     /*Project Section*/
+    
     #projects .project-item{
         flex-direction: row;
     }
@@ -749,6 +750,30 @@ p{
     #projects .all-projects .project-item{
         height: 100%;
     }
+
+    
+
+
+     .project-info h1 {
+        position: relative;
+      }
+      
+      .project-info h1::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: rgb(19, 162, 28);
+        transition: width 0.3s ease;
+      }
+      
+      .project-info h1:hover::after {
+        width: 100%;
+      }
+       
+
     /*End Project Section*/
     
     /*About Section*/
@@ -763,8 +788,8 @@ p{
     #about .about  .col-left .about-img::after{
         left: -45px;
         top: 34px;
-        height: 98%;
-        width: 98%;
+        height: 99%;
+        width: 99%;
         border: 10px solid rgb(19, 162, 28);
     }
     #about .col-right{
