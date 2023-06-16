@@ -1,6 +1,7 @@
 //várivel da language checkbox (INGLÊS ou PT-BR)
 let checkbox = document.querySelector("#language");
-
+var mediaQuery = window.matchMedia("only screen and (min-width: 572px)");
+var h2Element = document.getElementById("email");
 //Itens da lista do HEADER
 const listaItems = document.querySelectorAll("#item");
 const Services = listaItems[1];
@@ -205,4 +206,16 @@ menu_item.forEach((item) => {
     hamburguer.classList.toggle("active");
     mobile_menu.classList.toggle("active");
   });
+
+  function verificarMediaQuery(mediaQuery) {
+    if (mediaQuery.matches) {
+      h2Element.innerHTML = "thales.sousufpi@gmail.com";
+    } else {
+      h2Element.innerHTML = "thales.sousufpi<br>@gmail.com";
+    }
+  }
+  const mediaQuery = window.matchMedia("only screen and (min-width: 572px)");
+  verificarMediaQuery(mediaQuery); // Verificar condição inicial da media query
+
+  window.addEventListener("resize", () => verificarMediaQuery(mediaQuery));
 });
