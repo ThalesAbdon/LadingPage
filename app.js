@@ -53,6 +53,7 @@ const projectsSectionTitleBR = document.getElementById(
 const oldPortfolioHead = document.getElementById("oldPortfolioHead");
 const oldPortfolioParagraph = document.getElementById("oldPortfolioParagraph");
 const pokemonGameParagraph = document.getElementById("pokemonGameParagraph");
+const bookStoreParagraph = document.getElementById("bookStoreParagraph");
 const fightGameParagraph = document.getElementById("fightGameParagraph");
 
 //About Section
@@ -115,6 +116,8 @@ language.addEventListener("click", () => {
     oldPortfolioHead.textContent = "Meu primeiro Portfólio";
     oldPortfolioParagraph.textContent =
       "Este projeto representa o meu primeiro portfólio, desenvolvido utilizando HTML, CSS e JavaScript. Ele mostra minha jornada inicial como desenvolvedor web e demonstra minhas habilidades iniciais em desenvolvimento front-end.";
+    bookStoreParagraph.textContent =  
+      "A leitura desempenha um papel fundamental no crescimento pessoal e intelectual das pessoas. Desde sempre, nutri uma profunda paixão pela leitura, explorando uma ampla gama de tópicos. Com base nessa paixão, decidi empreender um projeto que se inspira no universo das livrarias."
     pokemonGameParagraph.textContent =
       "Um projeto inspirado nos jogos de Pokémon da terceira geração (Fire Red/Leaf Green, Ruby/Sapphire, Emerald). Como um fã de jogos desde criança, Pokémon era um dos meus jogos favoritos. Jogá-lo no meu Game Boy despertou minha paixão pela programação. Decidi me desafiar ao tentar recriar uma experiência semelhante aos jogos da franquia.";
     fightGameParagraph.textContent =
@@ -167,6 +170,8 @@ language.addEventListener("click", () => {
     oldPortfolioHead.textContent = "First Portfolio";
     oldPortfolioParagraph.textContent =
       "This project represents my very first portfolio, developed using HTML, CSS, and JavaScript. It showcases my initial journey as a web developer and demonstrates my early skills in front-end development.";
+    bookStoreParagraph.textContent =
+      "Reading plays a fundamental role in personal and intellectual development. I've always nurtured a deep passion for reading, exploring a wide range of topics. Based on this passion, I decided to undertake a project inspired by the world of bookstores."  
     pokemonGameParagraph.textContent =
       "A project inspired by the third-generation Pokémon games. As a fan of gaming since childhood, Pokémon was one of my favorite games. Playing it on my Game Boy sparked my passion for programming. I decided to challenge myself by recreating a similar experience to the franchise's games.";
     fightGameParagraph.textContent =
